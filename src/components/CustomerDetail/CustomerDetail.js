@@ -11,6 +11,8 @@ export default function CustomerDetail({ match }) {
     if (cus.email === match.params.email) {
       customer = cus;
     }
+
+    return customer;
   });
 
   return (
